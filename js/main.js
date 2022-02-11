@@ -7,19 +7,8 @@ const score = document.querySelector('.spindle-rate')
 const options = document.querySelectorAll('.option')
 
 const calculate = () => {
-	if (options.value === '1') {
-		const box = 3.14 * parseFloat(diameter.value)
-		const totalyScore = 25000 / box
-		score.textContent = `${totalyScore.toFixed(0)}`
-	} else {
-		return
-	}
+	const box = 3.14 * parseFloat(diameter.value)
+	const drillHssScore = 25000 / box
+	score.textContent = `${drillHssScore.toFixed(0)}`
 }
-
-// const calculate = () => {
-// 	const box = 3.14 * parseFloat(diameter.value)
-// 	const totalyScore = 25000 / box
-// 	score.textContent = `${totalyScore.toFixed(0)}`
-// }
-
 Btn.addEventListener('click', calculate)
