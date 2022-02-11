@@ -1,0 +1,120 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+:root {
+	--title-font: 'Open Sans', sans-serif;
+	--text-font: 'Open Sans Condensed', sans-serif;
+	--text-color: rgb(245, 245, 253);
+	--bgc-color: rgb(96, 77, 255);
+	--light-color: rgb(184, 190, 204);
+	--st--light-color: rgb(245, 245, 253);
+	--inputs--color: rgb(33, 22, 133);
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	font-family: var(--text-font);
+	font-size: 1.6rem;
+	color: var(--text-color);
+	background-color: var(--light-color);
+}
+.wrapper {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	background-color: var(--bgc-color);
+	width: 100vw;
+	height: 100vh;
+}
+.question-mark {
+	top: 7px;
+	left: 7px;
+	position: absolute;
+	padding: 1em;
+	cursor: pointer;
+}
+h1 {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 3rem;
+	font-family: var(--title-font);
+}
+header p {
+	font-family: var(--title-font);
+	text-align: center;
+	font-size: 1.5rem;
+	opacity: 0.7;
+}
+.app-body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 10vh;
+}
+
+.diameter,
+.kind,
+.material {
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 2em;
+	padding: 1em 3em;
+	background-color: var(--st--light-color);
+	color: var(--inputs--color);
+	border: none;
+	border-radius: 12px;
+}
+
+.material {
+	padding: 1em 3.5em;
+}
+.button {
+	margin: 0 auto;
+	text-align: center;
+	padding: 1em 3em;
+	background-color: rgb(33, 22, 133);
+	color: var(--light-color);
+	border: none;
+	border-radius: 12px;
+	transition: transform 0.2s;
+	cursor: pointer;
+}
+.button:hover {
+	transform: scale(1.1);
+}
+
+.app-bottom {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 100vw;
+	height: 33vh;
+}
+
+.error-info {
+	font-family: var(--title-font);
+	color: rgb(114, 41, 41);
+	visibility: hidden;
+}
+.spindle-info,
+.spindle-rate {
+	font-family: var(--title-font);
+	font-size: 2rem;
+}
+.spindle-rate {
+	color: rgb(131, 17, 17);
+	font-size: 2.4rem;
+}

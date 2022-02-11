@@ -1,0 +1,169 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --title-font: 'Open Sans', sans-serif;
+  --text-font: 'Open Sans Condensed', sans-serif;
+  --text-color: rgb(245, 245, 253);
+  --bgc-color: rgb(96, 77, 255);
+  --light-color: rgb(184, 190, 204);
+  --st--light-color: rgb(245, 245, 253);
+  --inputs--color: rgb(33, 22, 133);
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  font-family: var(--text-font);
+  font-size: 1.6rem;
+  color: var(--text-color);
+  background-color: var(--light-color);
+}
+
+.wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: var(--bgc-color);
+  width: 100vw;
+  height: 100vh;
+}
+
+.question-mark {
+  top: 7px;
+  left: 7px;
+  position: absolute;
+  padding: 1em;
+  cursor: pointer;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-family: var(--title-font);
+}
+
+header p {
+  font-family: var(--title-font);
+  text-align: center;
+  font-size: 1.5rem;
+  opacity: 0.7;
+}
+
+.app-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 10vh;
+}
+
+.diameter,
+.kind,
+.material {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 2em;
+  padding: 1em 3em;
+  background-color: var(--st--light-color);
+  color: var(--inputs--color);
+  border: none;
+  border-radius: 12px;
+}
+
+.material {
+  padding: 1em 3.5em;
+}
+
+.button {
+  margin: 0 auto;
+  text-align: center;
+  padding: 1em 3em;
+  background-color: #211685;
+  color: var(--light-color);
+  border: none;
+  border-radius: 12px;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  cursor: pointer;
+}
+
+.button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.app-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100vw;
+  height: 33vh;
+}
+
+.error-info {
+  font-family: var(--title-font);
+  color: #722929;
+  visibility: hidden;
+}
+
+.spindle-info,
+.spindle-rate {
+  font-family: var(--title-font);
+  font-size: 2rem;
+}
+
+.spindle-rate {
+  color: #831111;
+  font-size: 2.4rem;
+}
+/*# sourceMappingURL=main.css.map */

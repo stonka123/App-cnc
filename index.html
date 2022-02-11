@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNC - app </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Open+Sans+Condensed:wght@300&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ce63988251.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="question-mark"><i class="far fa-question-circle"></i></div>
+            <h1>Kalkulator CNC</h1>
+            <p>Dobierz najlepsze parametry do obróbki!</p>
+        </header>
+        <div class="app-body">
+            <select id="kind" class="kind">
+                <option class="option" value="0" disabled selected>Wybierz rodzaj obróbki</option>
+                <option class="option" value="1">Wiercenie HSS</option>
+                <option class="option" value="2">Frezowanie</option>
+                <option class="option" value="3">Rozwiercanie</option>
+            </select>
+            <input type="number" class="diameter" placeholder="Wpisz srednice narzędzia" />
+            <select id="material" class="material">
+                <option value="0" disabled selected>Wybierz materiał</option>
+                <option value="1">STAL</option>
+                <option value="2.2">TWORZYWO</option>
+                <option value="1.7">ALUMINIUM</option>
+            </select>
+        </div>
+        <div class="app-bottom">
+            <p class="error-info">Wpisz odpowiednią średnicę narzędzia!</p>
+            <button class="button">Oblicz</button>
+
+            <p class="spindle-info">
+                Optymalne obroty to: <span class="spindle-rate"></span>
+            </p>
+        </div>
+
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
