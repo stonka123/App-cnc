@@ -87,7 +87,7 @@ body {
 }
 
 .custom-shape-divider-bottom-1644693188 .shape-fill {
-  fill: #B1A7FF;
+  fill: #b1a7ff;
 }
 
 .wrapper {
@@ -245,10 +245,6 @@ header p {
   border: none;
   border-radius: 12px;
   width: 100%;
-}
-
-.material {
-  padding: 1em 3.5em;
 }
 
 .button {

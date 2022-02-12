@@ -55,25 +55,25 @@ body {
 	height: 100vh;
 }
 .custom-shape-divider-bottom-1644693188 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+	transform: rotate(180deg);
 }
 
 .custom-shape-divider-bottom-1644693188 svg {
-    position: relative;
-    display: block;
-    width: calc(216% + 1.3px);
-    height: 86px;
-    transform: rotateY(180deg);
+	position: relative;
+	display: block;
+	width: calc(216% + 1.3px);
+	height: 86px;
+	transform: rotateY(180deg);
 }
 
 .custom-shape-divider-bottom-1644693188 .shape-fill {
-    fill: #B1A7FF;
+	fill: #b1a7ff;
 }
 .wrapper {
 	position: relative;
@@ -186,10 +186,6 @@ header p {
 	border: none;
 	border-radius: 12px;
 	width: 100%;
-}
-
-.material {
-	padding: 1em 3.5em;
 }
 .button {
 	margin: 0 auto;
