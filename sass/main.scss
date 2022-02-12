@@ -54,7 +54,37 @@ body {
 	width: 100vw;
 	height: 100vh;
 }
+.custom-shape-divider-bottom-1644693188 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
 
+.custom-shape-divider-bottom-1644693188 svg {
+    position: relative;
+    display: block;
+    width: calc(216% + 1.3px);
+    height: 86px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1644693188 .shape-fill {
+    fill: #B1A7FF;
+}
+.wrapper {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	background-color: var(--bgc-color);
+	width: 100vw;
+	height: 100vh;
+}
 h1 {
 	text-align: center;
 	text-transform: uppercase;
@@ -141,6 +171,7 @@ header p {
 	height: 10vh;
 	width: 60vw;
 	max-width: 600px;
+	z-index: 4;
 }
 
 .diameter,
@@ -182,6 +213,7 @@ header p {
 	justify-content: center;
 	width: 100vw;
 	height: 33vh;
+	z-index: 4;
 }
 
 .error-info {
