@@ -3,7 +3,16 @@
 	padding: 0;
 	margin: 0;
 }
-:root {
+// :root {
+// 	--title-font: 'Open Sans', sans-serif;
+// 	--text-font: 'Open Sans Condensed', sans-serif;
+// 	--text-color: rgb(245, 245, 253);
+// 	--bgc-color: rgb(96, 77, 255);
+// 	--light-color: rgb(184, 190, 204);
+// 	--st--light-color: rgb(245, 245, 253);
+// 	--inputs--color: rgb(33, 22, 133);
+// }
+[data-mode='light'] {
 	--title-font: 'Open Sans', sans-serif;
 	--text-font: 'Open Sans Condensed', sans-serif;
 	--text-color: rgb(245, 245, 253);
@@ -12,7 +21,15 @@
 	--st--light-color: rgb(245, 245, 253);
 	--inputs--color: rgb(33, 22, 133);
 }
-
+[data-mode='dark'] {
+	--title-font: 'Open Sans', sans-serif;
+	--text-font: 'Open Sans Condensed', sans-serif;
+	--text-color: rgb(96, 77, 255);
+	--bgc-color: rgb(37, 36, 53);
+	--light-color: rgb(184, 190, 204);
+	--st--light-color: rgb(245, 245, 253);
+	--inputs--color: rgb(120, 112, 192);
+}
 html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
@@ -102,8 +119,17 @@ header p {
 }
 .bright-icon {
 	display: none;
+	color: rgb(209, 209, 88);
+	&--show {
+		display: block;
+	}
 }
-
+.dark-icon {
+	display: block;
+	&--hide {
+		display: none;
+	}
+}
 .app-body {
 	display: flex;
 	flex-direction: column;

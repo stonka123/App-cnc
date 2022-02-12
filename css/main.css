@@ -5,7 +5,7 @@
   margin: 0;
 }
 
-:root {
+[data-mode='light'] {
   --title-font: 'Open Sans', sans-serif;
   --text-font: 'Open Sans Condensed', sans-serif;
   --text-color: rgb(245, 245, 253);
@@ -13,6 +13,16 @@
   --light-color: rgb(184, 190, 204);
   --st--light-color: rgb(245, 245, 253);
   --inputs--color: rgb(33, 22, 133);
+}
+
+[data-mode='dark'] {
+  --title-font: 'Open Sans', sans-serif;
+  --text-font: 'Open Sans Condensed', sans-serif;
+  --text-color: rgb(96, 77, 255);
+  --bgc-color: rgb(37, 36, 53);
+  --light-color: rgb(184, 190, 204);
+  --st--light-color: rgb(245, 245, 253);
+  --inputs--color: rgb(120, 112, 192);
 }
 
 html {
@@ -140,6 +150,19 @@ header p {
 }
 
 .bright-icon {
+  display: none;
+  color: #d1d158;
+}
+
+.bright-icon--show {
+  display: block;
+}
+
+.dark-icon {
+  display: block;
+}
+
+.dark-icon--hide {
   display: none;
 }
 

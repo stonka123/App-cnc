@@ -6,6 +6,9 @@ const errorText = document.querySelector('.error-info')
 const scoreParagraph = document.querySelector('.spindle-rate')
 const questionBtn = document.querySelector('.question-mark')
 const popUp = document.querySelector('.popup')
+const body = document.querySelector('body')
+const btnMoon = document.querySelector('.dark-icon')
+const btnSun = document.querySelector('.bright-icon')
 
 const calculate = () => {
 	let boxScore = ((kind.value * 318) / diameter.value) * material.value
@@ -48,6 +51,19 @@ const showPopup = () => {
 	popUp.classList.toggle('popup-show')
 	questionBtn.classList.toggle('question-mark--color')
 }
+const darkMode = () => {
+	if (body.getAttribute('data-mode') === 'light') {
+		body.setAttribute('data-mode', 'dark')
+		btnSun.classList.toggle('bright-icon--show')
+		btnMoon.classList.toggle('dark-icon--hide')
+	} else {
+		body.setAttribute('data-mode', 'light')
+		btnMoon.classList.toggle('dark-icon--hide')
+		btnSun.classList.toggle('bright-icon--show')
+	}
+}
 
 Btn.addEventListener('click', calculate)
 questionBtn.addEventListener('click', showPopup)
+btnMoon.addEventListener('click', darkMode)
+btnSun.addEventListener('click', darkMode)
