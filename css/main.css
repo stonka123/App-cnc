@@ -182,6 +182,7 @@ header p {
           justify-content: center;
   height: 10vh;
   width: 60vw;
+  max-width: 600px;
 }
 
 .diameter,

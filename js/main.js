@@ -20,8 +20,8 @@ const calculate = () => {
 	checkString()
 	maxSpindle()
 	checkInf()
-}
 
+}
 const checkInf = () => {
 	if (diameter.value === '') {
 		scoreParagraph.textContent = ''
@@ -29,6 +29,14 @@ const checkInf = () => {
 		errorText.style.visibility = 'visible'
 		errorText.textContent = 'Błąd średnicy narzędzia!'
 		scoreParagraph.textContent = ''
+	} else if (kind.value <= 0) {
+		errorText.style.visibility = 'visible'
+		errorText.textContent = 'Wypełnij parametry obróbki!'
+		scoreParagraph.style.visibility = 'hidden'
+	} else if (material.value <= 0) {
+		errorText.style.visibility = 'visible'
+		errorText.textContent = 'Wypełnij parametry obróbki!'
+		scoreParagraph.style.visibility = 'hidden'
 	}
 }
 
