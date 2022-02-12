@@ -73,6 +73,10 @@ h1 {
   font-family: var(--title-font);
 }
 
+header {
+  height: 10vh;
+}
+
 header p {
   font-family: var(--title-font);
   text-align: center;
@@ -146,7 +150,7 @@ header p {
   padding: 0.8em;
   font-size: 2rem;
   cursor: pointer;
-  color: var(--light-color);
+  color: #4c4b4d;
 }
 
 .bright-icon {
