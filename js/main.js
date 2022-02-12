@@ -4,15 +4,16 @@ const material = document.querySelector('.material')
 const Btn = document.querySelector('.button')
 const errorText = document.querySelector('.error-info')
 const scoreParagraph = document.querySelector('.spindle-rate')
-//KIND OPTION
-const option = document.querySelectorAll('.option1')
+const questionBtn = document.querySelector('.question-mark')
+const popUp = document.querySelector('.popup')
 
 const calculate = () => {
 	let boxScore = ((kind.value * 318) / diameter.value) * material.value
 	let boxe = (scoreParagraph.textContent = `${boxScore.toFixed(0)}`)
 	errorText.textContent = ''
-	// scoreParagraph.textContent = ''
 	scoreParagraph.style.visibility = 'visible'
+	popUp.classList.remove('popup-show')
+	questionBtn.classList.remove('question-mark--color')
 	checkString()
 	maxSpindle()
 	checkInf()
@@ -43,5 +44,10 @@ const maxSpindle = () => {
 		scoreParagraph.textContent = '20000'
 	}
 }
+const showPopup = () => {
+	popUp.classList.toggle('popup-show')
+	questionBtn.classList.toggle('question-mark--color')
+}
 
 Btn.addEventListener('click', calculate)
+questionBtn.addEventListener('click', showPopup)
