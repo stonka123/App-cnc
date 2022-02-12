@@ -181,6 +181,7 @@ header p {
       -ms-flex-pack: center;
           justify-content: center;
   height: 10vh;
+  width: 60vw;
 }
 
 .diameter,
@@ -194,6 +195,7 @@ header p {
   color: var(--inputs--color);
   border: none;
   border-radius: 12px;
+  width: 100%;
 }
 
 .material {
@@ -231,9 +233,9 @@ header p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100vw;
   height: 33vh;
 }
@@ -242,10 +244,12 @@ header p {
   font-family: var(--title-font);
   color: #722929;
   visibility: hidden;
+  margin: 0.5em;
 }
 
 .spindle-info,
 .spindle-rate {
+  margin: 0.5em;
   font-family: var(--title-font);
   font-size: 2rem;
 }
