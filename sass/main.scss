@@ -215,6 +215,7 @@ header p {
 }
 
 .error-info {
+	display: inline-block;
 	font-family: var(--title-font);
 	color: rgb(114, 41, 41);
 	visibility: hidden;

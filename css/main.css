@@ -289,6 +289,7 @@ header p {
 }
 
 .error-info {
+  display: inline-block;
   font-family: var(--title-font);
   color: #722929;
   visibility: hidden;

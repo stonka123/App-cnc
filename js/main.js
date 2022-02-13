@@ -28,6 +28,10 @@ const checkInf = () => {
 		errorText.style.visibility = 'visible'
 		errorText.textContent = 'Błąd średnicy narzędzia!'
 		scoreParagraph.textContent = ''
+	} else if (diameter.value >= 125) {
+		errorText.style.visibility = 'visible'
+		errorText.textContent = 'Błąd średnicy narzędzia!'
+		scoreParagraph.textContent = ''
 	} else if (kind.value <= 0) {
 		errorText.style.visibility = 'visible'
 		errorText.textContent = 'Wypełnij parametry obróbki!'
