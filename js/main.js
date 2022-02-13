@@ -1,7 +1,7 @@
 const kind = document.querySelector('#kind')
 const diameter = document.querySelector('.diameter')
 const material = document.querySelector('.material')
-const Btn = document.querySelector('.button')
+const btn = document.querySelector('.button')
 const errorText = document.querySelector('.error-info')
 const scoreParagraph = document.querySelector('.spindle-rate')
 const questionBtn = document.querySelector('.question-mark')
@@ -20,7 +20,6 @@ const calculate = () => {
 	checkString()
 	maxSpindle()
 	checkInf()
-
 }
 const checkInf = () => {
 	if (diameter.value === '') {
@@ -64,14 +63,16 @@ const darkMode = () => {
 		body.setAttribute('data-mode', 'dark')
 		btnSun.classList.toggle('bright-icon--show')
 		btnMoon.classList.toggle('dark-icon--hide')
+		scoreParagraph.classList.add('spindle-rate--bright')
 	} else {
 		body.setAttribute('data-mode', 'light')
 		btnMoon.classList.toggle('dark-icon--hide')
 		btnSun.classList.toggle('bright-icon--show')
+		scoreParagraph.classList.remove('spindle-rate--bright')
 	}
 }
 
-Btn.addEventListener('click', calculate)
+btn.addEventListener('click', calculate)
 questionBtn.addEventListener('click', showPopup)
 btnMoon.addEventListener('click', darkMode)
 btnSun.addEventListener('click', darkMode)

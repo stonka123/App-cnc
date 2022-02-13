@@ -29,6 +29,7 @@
 	--light-color: rgb(184, 190, 204);
 	--st--light-color: rgb(245, 245, 253);
 	--inputs--color: rgb(120, 112, 192);
+	--bright--spindle--color: rgb(240, 12, 12);
 }
 html {
 	font-size: 62.5%;
@@ -181,6 +182,7 @@ header p {
 	text-align: center;
 	margin-top: 2em;
 	padding: 1em 3em;
+	font-size: 1.3rem;
 	background-color: var(--st--light-color);
 	color: var(--inputs--color);
 	border: none;
@@ -227,4 +229,76 @@ header p {
 .spindle-rate {
 	color: rgb(131, 17, 17);
 	font-size: 2.4rem;
+	&--bright {
+		color: var(--bright--spindle--color);
+	}
+}
+
+// media
+
+@media (min-width: 768px) {
+	.question-mark {
+		font-size: 3rem;
+	}
+	.darkmode-icon {
+		font-size: 3rem;
+	}
+	.popup-text {
+		font-size: 1.8rem;
+	}
+	h1 {
+		font-size: 4rem;
+	}
+	header p {
+		font-size: 1.7rem;
+	}
+	.kind,
+	.diameter,
+	.material {
+		font-size: 1.7rem;
+	}
+	.error-info {
+		font-size: 2rem;
+	}
+	.spindle-info {
+		font-size: 2.2rem;
+	}
+	.spindle-rate {
+		font-size: 2.5rem;
+	}
+}
+
+@media (min-width: 992px) {
+	.question-mark {
+		font-size: 4rem;
+	}
+	.darkmode-icon {
+		font-size: 4rem;
+	}
+	.popup-text {
+		font-size: 2.3rem;
+	}
+	h1 {
+		font-size: 5rem;
+	}
+	header p {
+		font-size: 2rem;
+	}
+	.kind,
+	.diameter,
+	.material {
+		font-size: 1.7rem;
+	}
+	.error-info {
+		font-size: 2.5rem;
+	}
+	.button {
+		font-size: 2rem;
+	}
+	.spindle-info {
+		font-size: 3rem;
+	}
+	.spindle-rate {
+		font-size: 3.5rem;
+	}
 }
