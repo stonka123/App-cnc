@@ -1,0 +1,17 @@
+{
+	"name": "cnc-app-ts",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"compile": "tsc --watch"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/stonka123/Calc-cnc-ts.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {}
+}
