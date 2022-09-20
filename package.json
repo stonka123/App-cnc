@@ -8,10 +8,13 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/stonka123/Calc-cnc-ts.git"
+		"url": "git+https://github.com/stonka123/App-cnc.git"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
-	"bugs": {}
+	"bugs": {
+		"url": "https://github.com/stonka123/App-cnc/issues"
+	},
+	"homepage": "https://github.com/stonka123/App-cnc#readme"
 }
